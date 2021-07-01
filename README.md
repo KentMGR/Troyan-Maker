@@ -14,4 +14,4 @@ El .exe generado es detectado por algunos antivirus. (Entonces no es indetectabl
 
 --------------------------------------------------------------------------------
 
-En caso de problema, envíeme un mensaje en Discord :: Kent#0069
+En caso de problema, envíeme un mensaje en Discord :: Kent#0070
